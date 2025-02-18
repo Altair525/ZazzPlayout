@@ -9,7 +9,7 @@ ZazzPlayout is a 24/7 broadcasting solution, fork of the old FFPlayout. It can p
 
 The application is mostly designed to run as system service on Linux. But in general it should run on any platform supported by Rust.
 
-Check the [releases](https://github.com/ZazzPlayout/ZazzPlayout/releases/latest) for pre compiled version.
+Check the [releases](https://github.com/Altair525/ZazzPlayout/releases/latest) for pre compiled version.
 
 ### Features
 
