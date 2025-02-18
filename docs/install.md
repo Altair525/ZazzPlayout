@@ -4,7 +4,7 @@
 
 ZazzPlayout provides ***.deb** and ***.rpm** packages, which makes it easier to install and use, but there are still some steps to follow.
 
-1. Download the latest ZazzPlayout from the [release](https://github.com/ZazzPlayout/ZazzPlayout/releases/latest) page and place the package in the **/tmp** folder
+1. Download the latest ZazzPlayout from the [release](https://github.com/Altair525/ZazzPlayout/releases/latest) page and place the package in the **/tmp** folder
 2. Install it with `apt install /tmp/ZazzPlayout_<VERSION>_amd64.deb`
 3. Install ffmpeg/ffprobe, or compile and copy them to **/usr/local/bin/**
 4. Initialize the defaults and add a global admin user: `sudo -u ffpu ZazzPlayout -i`
@@ -16,7 +16,7 @@ ZazzPlayout provides ***.deb** and ***.rpm** packages, which makes it easier to 
 **Note:** This is for advanced users only.
 
 - Install ffmpeg/ffprobe, or compile and copy them to **/usr/local/bin/**
-- Download the latest archive from the [release](https://github.com/ZazzPlayout/ZazzPlayout/releases/latest) page
+- Download the latest archive from the [release](https://github.com/Altair525/ZazzPlayout/releases/latest) page
 - Copy the ZazzPlayout binary to `/usr/bin/`
 - Copy **assets/ZazzPlayout.yml** to `/etc/ZazzPlayout`
 - Create the folder `/var/log/ZazzPlayout`
