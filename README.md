@@ -5,7 +5,7 @@
 
 ![player](/docs/images/player.png)
 
-ZazzPlayout is a 24/7 broadcasting solution fork of the old FFPlayout. It can playout a folder containing audio or video clips, or play a *JSON* playlist for each day, keeping the current playlist editable.
+ZazzPlayout is a 24/7 broadcasting solution, fork of the old FFPlayout. It can playout a folder containing audio or video clips, or play a *JSON* playlist for each day, keeping the current playlist editable.
 
 The application is mostly designed to run as system service on Linux. But in general it should run on any platform supported by Rust.
 
