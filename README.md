@@ -5,11 +5,11 @@
 
 ![player](/docs/images/player.png)
 
-ffplayout is a 24/7 broadcasting solution. It can playout a folder containing audio or video clips, or play a *JSON* playlist for each day, keeping the current playlist editable.
+ZazzPlayout is a 24/7 broadcasting solution. It can playout a folder containing audio or video clips, or play a *JSON* playlist for each day, keeping the current playlist editable.
 
 The application is mostly designed to run as system service on Linux. But in general it should run on any platform supported by Rust.
 
-Check the [releases](https://github.com/ffplayout/ffplayout/releases/latest) for pre compiled version.
+Check the [releases](https://github.com/ZazzPlayout/ZazzPlayout/releases/latest) for pre compiled version.
 
 ### Features
 
@@ -67,7 +67,7 @@ For preview stream, read: [/docs/preview_stream.md](/docs/preview_stream.md)
 
 ### Install
 
-Check [install](docs/install.md) for details about how to install ffplayout.
+Check [install](docs/install.md) for details about how to install ZazzPlayout.
 
 -----
 
@@ -123,4 +123,4 @@ If you are in playlist mode and move backwards or forwards in time, the time shi
 
 ## Note
 This project includes the DejaVu font, which are licensed under the [Bitstream Vera Fonts License](/assets/FONT_LICENSE.txt).
-ve.com/ffplayout/backers.svg?width=800&button=true)](https://opencollective.com/ffplayout)
+ve.com/ZazzPlayout/backers.svg?width=800&button=true)](https://opencollective.com/ZazzPlayout)
