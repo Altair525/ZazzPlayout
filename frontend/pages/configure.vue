@@ -60,7 +60,7 @@ const { t } = useI18n()
 const authStore = useAuth()
 
 useHead({
-    title: `${t('button.configure')} | ffplayout`,
+    title: `${t('button.configure')} | ZazzPlayout`,
 })
 
 const activeConf = ref(1)

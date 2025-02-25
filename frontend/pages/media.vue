@@ -327,7 +327,7 @@ const { toMin, mediaType, filename, parent, dir_file } = stringFormatter()
 const { i } = storeToRefs(useConfig())
 
 useHead({
-    title: `${t('button.media')} | ffplayout`,
+    title: `${t('button.media')} | ZazzPlayout`,
 })
 
 const horizontal = ref(false)

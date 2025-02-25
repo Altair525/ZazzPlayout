@@ -50,7 +50,7 @@ const { locale, t } = useI18n()
 const indexStore = useIndex()
 
 useHead({
-    title: `${t('button.logging')} | ffplayout`,
+    title: `${t('button.logging')} | ZazzPlayout`,
 })
 
 const { i } = storeToRefs(useConfig())

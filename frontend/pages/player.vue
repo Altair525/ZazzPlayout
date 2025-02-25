@@ -303,7 +303,7 @@ const newSource = ref({
 } as PlaylistItem)
 
 useHead({
-    title: `${t('button.player')} | ffplayout`,
+    title: `${t('button.player')} | ZazzPlayout`,
     bodyAttrs: {
         class: computed(() => {
             if (showPlaylistGenerator.value) return 'overflow-hidden'

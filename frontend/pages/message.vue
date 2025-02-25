@@ -231,7 +231,7 @@ const { i } = storeToRefs(useConfig())
 const { numberToHex, hexToNumber } = stringFormatter()
 
 useHead({
-    title: 'Messages | ffplayout',
+    title: 'Messages | ZazzPlayout',
 })
 
 interface PresetName {
