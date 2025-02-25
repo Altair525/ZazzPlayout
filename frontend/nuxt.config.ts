@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devServer: {
+		watch: [],
         port: 3000, // default: 3000
         host: '127.0.0.1', // default: localhost
     },
