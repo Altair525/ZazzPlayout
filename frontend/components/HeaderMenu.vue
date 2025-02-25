@@ -1,7 +1,8 @@
 <template>
     <div class="navbar bg-base-100 min-h-[52px] p-0 shadow-md">
-        <NuxtLink class="navbar-brand min-w-[46px] p-2" href="/">
-            <img src="~/assets/images/ffplayout-small.png" class="img-fluid" alt="Logo" width="30" height="30" />
+        <NuxtLink class="navbar-brand min-w-[48px] p-2" href="/">
+            <img src="~/assets/images/ffplayout-small.png" class="img-fluid" alt="Logo" width="42" height="46" />
+			<p>Playout</p>
         </NuxtLink>
         <div class="navbar-end w-1/5 grow">
             <label class="swap swap-rotate me-2 2sm:hidden">
