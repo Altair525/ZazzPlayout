@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.13.1",
-  "description": "Web GUI for ffplayout",
+  "description": "Web GUI for ZazzPlayout, fork of FFplayout",
   "author": "Jonathan Baecker",
   "private": true,
   "type": "module",

@@ -31,7 +31,7 @@ export default defineNuxtConfig({
 
     app: {
         head: {
-            title: 'ffplayout',
+            title: 'ZazzPlayout',
             meta: [
                 {
                     charset: 'utf-8',
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
                 {
                     hid: 'description',
                     name: 'description',
-                    content: 'Frontend for ffplayout, the 24/7 Rust and playlist based streaming solution.',
+                    content: 'Frontend for Zazzplayout, the 24/7 Rust and playlist based streaming solution, fork of FFplayout.',
                 },
             ],
             link: [
