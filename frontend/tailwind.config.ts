@@ -76,55 +76,55 @@ module.exports = {
         themes: [
             {
                 light: {
-                    'color-scheme': 'light',
-                    primary: '#e0e0e0',
-                    'base-content': '#222222',
-                    secondary: '#c7c7c7',
-                    accent: '#f28c1b',
-                    'base-100': '#ffffff',
-                    'base-200': '#F2F5F7',
-                    'base-300': '#E5E6E6',
-                    neutral: '#2B3440',
-                    'neutral-focus': '#343232',
-                    info: '#0000ff',
-                    success: '#008000',
-                    warning: '#f28c1b',
-                    error: '#ff3c00',
-                    '--base-100': '#ffffff',
-                    '--base-200': '#F2F5F7',
-                    '--base-300': '#E5E6E6',
-                    '--my-accent': '#f28c1b',
-                    '--my-gray': '#888888',
-                    '--my-purple': '#701a75',
-                    '--my-yellow': '#bea203',
-                    '--my-blue': '#436e9c',
-                    '--my-green': '#68b31e',
-                },
+					'color-scheme': 'light',
+					primary: '#8fbf60', // Verde médio equilibrado
+					'base-content': '#222222', // Texto preto para contraste
+					secondary: '#bfe6a8', // Verde pastel para áreas secundárias
+					accent: '#6d9f50', // Verde discreto para realce
+					'base-100': '#d7f3c2', // Fundo verde pastel suave
+					'base-200': '#bfe6a8', // Verde um pouco mais escuro para separação
+					'base-300': '#aac896', // Verde acinzentado para profundidade
+					neutral: '#2B3440', 
+					'neutral-focus': '#343232',
+					info: '#005082', // Azul escuro para logs
+					success: '#146314', // Verde escuro
+					warning: '#946c00', // Amarelo queimado
+					error: '#8b0000', // Vermelho escuro
+					'--base-100': '#d7f3c2',
+					'--base-200': '#bfe6a8',
+					'--base-300': '#aac896',
+					'--my-accent': '#6d9f50',
+					'--my-gray': '#6b6b6b',
+					'--my-purple': '#701a75',
+					'--my-yellow': '#bea203',
+					'--my-blue': '#436e9c',
+					'--my-green': '#8fbf60',
+				},
                 dark: {
-                    'color-scheme': 'dark',
-                    primary: '#3b3b3b',
-                    'base-content': '#DFDFDF',
-                    secondary: '#d3d3d3',
-                    accent: '#f28c1b',
-                    'base-100': '#313131',
-                    'base-200': '#222222',
-                    'base-300': '#1c1c1c',
-                    neutral: '#272626',
-                    'neutral-focus': '#343232',
-                    info: '#0000ff',
-                    success: '#008000',
-                    warning: '#f28c1b',
-                    error: '#ff3c00',
-                    '--base-100': '#313131',
-                    '--base-200': '#222222',
-                    '--base-300': '#1c1c1c',
-                    '--my-accent': '#f28c1b',
-                    '--my-gray': '#919191',
-                    '--my-purple': '#ad7fa8;',
-                    '--my-yellow': '#e2c317',
-                    '--my-blue': '#6c95c2',
-                    '--my-green': '#8ae234',
-                },
+					'color-scheme': 'dark',
+					primary: '#3b3b3b', // Cinza médio para elementos principais
+					'base-content': '#E0E0E0', // Cinza claro para leitura confortável
+					secondary: '#b0b0b0', // Cinza equilibrado para elementos secundários
+					accent: '#e07b14', // Laranja queimado, mais elegante
+					'base-100': '#252525', // Fundo principal mais suave
+					'base-200': '#1c1c1c', // Cinza escuro para camadas secundárias
+					'base-300': '#141414', // Tom quase preto para maior profundidade
+					neutral: '#272626',
+					'neutral-focus': '#343232',
+					info: '#4c8dc7', // Azul mais sofisticado
+					success: '#5faf5f', // Verde mais equilibrado
+					warning: '#e0a500', // Amarelo dourado refinado
+					error: '#d64b3c', // Vermelho queimado, menos agressivo
+					'--base-100': '#252525',
+					'--base-200': '#1c1c1c',
+					'--base-300': '#141414',
+					'--my-accent': '#e07b14',
+					'--my-gray': '#919191',
+					'--my-purple': '#9370db', // Roxo discreto
+					'--my-yellow': '#e0a500',
+					'--my-blue': '#4c8dc7',
+					'--my-green': '#5faf5f',
+				},
             },
         ],
     },
