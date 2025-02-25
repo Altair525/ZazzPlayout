@@ -45,7 +45,8 @@
             </div>
         </div>
         <div v-else class="w-96 min-w-full flex flex-col justify-center items-center px-4">
-            <h1 class="text-6xl xs:text-8xl">ffplayout</h1>
+            <img src="~/assets/images/ffplayout-small.png" alt="Playout Logo" class="w-24 h-24 mb-4" />
+			<h1 class="text-6xl xs:text-8xl">Playout</h1>
 
             <form class="mt-10" @submit.prevent="login">
                 <input
