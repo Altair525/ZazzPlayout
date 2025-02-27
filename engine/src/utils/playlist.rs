@@ -1,10 +1,12 @@
 use std::path::PathBuf;
 
+use chrono::Utc;
 use log::*;
 use tokio::fs;
 
 use crate::file::norm_abs_path;
 use crate::player::controller::ChannelManager;
+use crate::player::input::playlist;
 use crate::player::utils::{json_reader, json_writer, JsonPlaylist};
 use crate::utils::{config::PlayoutConfig, errors::ServiceError, generator::playlist_generator};
 
@@ -14,13 +16,18 @@ pub async fn read_playlist(
 ) -> Result<JsonPlaylist, ServiceError> {
     let d: Vec<&str> = date.split('-').collect();
     let mut playlist_path = config.channel.playlists.clone();
-
-    playlist_path = playlist_path
-        .join(d[0])
-        .join(d[1])
-        .join(date.clone())
-        .with_extension("json");
-
+    if config.playlist.infinit {
+        let today = Utc::now().date_naive(); // Obtém a data no formato YYYY-MM-DD
+        let filename = format!("{}.json", today); // Concatena a extensão .json
+        println!("Arquivo: {}", filename);
+        playlist_path = playlist_path.join(filename);
+    } else {
+        playlist_path = playlist_path
+            .join(d[0])
+            .join(d[1])
+            .join(date.clone())
+            .with_extension("json");
+    }
     match json_reader(&playlist_path).await {
         Ok(p) => Ok(p),
         Err(e) => Err(ServiceError::NoContent(e.to_string())),
