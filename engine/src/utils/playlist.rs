@@ -42,12 +42,17 @@ pub async fn write_playlist(
     let d: Vec<&str> = date.split('-').collect();
     let mut playlist_path = config.channel.playlists.clone();
 
-    if !playlist_path
+    if playlist_path
         .extension()
         .and_then(|ext| ext.to_str())
         .map(|ext| ext.eq_ignore_ascii_case("json"))
         .unwrap_or(false)
     {
+        let today = Utc::now().date_naive(); // Obtém a data no formato YYYY-MM-DD
+        let filename = format!("{}.json", today); // Concatena a extensão .json
+        println!("Arquivo: {}", filename);
+        playlist_path = playlist_path.join(filename);
+    } else {
         playlist_path = playlist_path
             .join(d[0])
             .join(d[1])
