@@ -1,3 +1,4 @@
+
 <template>
     <div class="grid grid-cols-1 xs:grid-cols-2 border-4 rounded-md border-primary text-left shadow min-w-[320px] md:min-w-[728px] max-w-[960px] mt-5">
         <div class="p-4 bg-base-100">
@@ -84,7 +85,11 @@
                 </div>
             </div>
         </div>
-        <div v-else class="col-6 bg-primary p-2 border" />
+        <div class="p-4 border border-primary">
+            <div class="w-full h-full rounded p-6 text-3xl md:text-2xl 2xl:text-5xl 4xl:text-7xl tracking-tighter flex justify-center items-center shadow">
+                <p class="relogio">{{ horaAtual }}</p>
+            </div>
+        </div>
     </div>
 </template>
 <script setup lang="ts">
@@ -156,4 +161,27 @@ watch([data], () => {
         }
     }
 })
+
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const horaAtual = ref(new Date().toLocaleString());
+
+let interval: ReturnType<typeof setInterval> | null = null; 
+
+onMounted(() => {
+  interval = setInterval(() => {
+    horaAtual.value = new Date().toLocaleString();
+  }, 1000);
+});
+
+onUnmounted(() => {
+  if (interval) {
+    clearInterval(interval);
+  }
+});
+
 </script>
+
+
+
+
