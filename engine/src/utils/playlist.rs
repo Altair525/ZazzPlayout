@@ -2,7 +2,7 @@ use std::path::PathBuf;
 
 use crate::file::norm_abs_path;
 use crate::player::controller::ChannelManager;
-use crate::player::input::playlist;
+//use crate::player::input::playlist;
 use crate::player::utils::{json_reader, json_writer, JsonPlaylist};
 use crate::utils::{config::PlayoutConfig, errors::ServiceError, generator::playlist_generator};
 use chrono::Local;
